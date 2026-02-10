@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            'use strict';
+            function powNum(num , powN){
+                let result = num;
+
+                for(let i = 1; i<powN; i++){
+                    result*=num;
+                }
+                return result;
+            }
+            let num = prompt('num', '');
+            let powN = prompt('pow', '');
+            if (powN< 1) {
+              alert(`Power ${powN} is not supported, use a positive integer`);
+            } else {
+              alert( powNum(num, powN) );
+            }
+
+        </script>
+        
+    </body>
+</html>

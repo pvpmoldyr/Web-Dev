@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            'use strict';
+            let num = prompt('prime num', '');
+            nextPrime:
+            for(let i = 2; i<=num; i++){
+                for(let j=2; j<i;j++){
+                    if (i % j == 0) continue nextPrime; 
+                }              
+                alert( i ); 
+            }
+
+
+            
+
+
+        </script>
+        
+    </body>
+</html>
