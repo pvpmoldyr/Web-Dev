@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="image-section">
+    <div class="main-img">
+      <img [src]="selectedImage" alt="product">
+    </div>
+    <div class="gallery">
+      <img *ngFor="let img of product.images" 
+           [src]="img" 
+           (click)="changeImage(img)" 
+           [class.active]="selectedImage === img">
+    </div>
+  </div>
+
+  <div class="info-section">
+    <h3>
+      <a [href]="product.link" target="_blank" class="product-name-link">
+        {{ product.name }}
+      </a>
+    </h3>
+    <p class="desc">{{ product.description }}</p>
+    <div class="stats">
+      <span class="price">{{ product.price }} KZT</span>
+      <span class="rating"> {{ product.rating  }} ☆☆☆☆☆ </span>
+    </div>
+  </div>
+
+  <div class="action-section">
+    <div class="share-btns">
+      <button (click)="shareToTelegram()" class="btn tg">Telegram</button>
+      <button (click)="shareToWhatsApp()" class="btn wa">WhatsApp</button>
+    </div>
+    <a [href]="product.link" target="_blank" class="kaspi-link">View on Kaspi</a>
+  </div>
+</div>
