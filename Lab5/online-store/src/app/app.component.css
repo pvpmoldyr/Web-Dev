@@ -1,0 +1,69 @@
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f14635;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.categories-sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+}
+
+.categories-sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.categories-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-sidebar li {
+    margin-bottom: 10px;
+}
+
+.categories-sidebar button {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.categories-sidebar button:hover {
+    background: #e9ecef;
+}
+
+.categories-sidebar button.active {
+    background: #ff0000;
+    color: white;
+}
+
+.products-area {
+    flex: 1;
+    padding: 20px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 100px;
+    color: #6c757d;
+}

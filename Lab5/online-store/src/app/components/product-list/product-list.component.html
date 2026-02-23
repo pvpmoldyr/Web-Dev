@@ -1,0 +1,16 @@
+<div class="category-header">
+  <h2>{{ categoryName }}</h2>
+</div>
+
+<div class="product-grid" *ngIf="products.length > 0">
+  <app-product-item 
+    *ngFor="let p of products" 
+    [product]="p"
+    (delete)="onDeleteProduct($event)"
+    (like)="onLikeProduct($event)">
+  </app-product-item>
+</div>
+
+<div class="no-products" *ngIf="products.length === 0">
+  <p>Нет товаров в этой категории</p>
+</div>
