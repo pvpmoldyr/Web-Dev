@@ -7,6 +7,7 @@ import { Category } from '../models/category.model';
 })
 export class ProductService {
   private categories: Category[] = [
+    { id: 0, name: 'Все товары' },
     { id: 1, name: 'Ноутбуки' },
     { id: 2, name: 'Комплектующие' },
     { id: 3, name: 'Периферия' },
@@ -330,25 +331,28 @@ private products: Product[] = [
         },
 
       ];
-    getCategories(): Category[] {
+      getCategories(): Category[] {
         return this.categories;
-    }
-
-    getProductsByCategory(categoryId: number): Product[] {
+      }
+    
+      getProductsByCategory(categoryId: number): Product[] {
+        if (categoryId === 0) {
+          return this.products;
+        }
         return this.products.filter(p => p.categoryId === categoryId);
-    }
-
-    deleteProduct(productId: number): void {
+      }
+    
+      deleteProduct(productId: number): void {
         const index = this.products.findIndex(p => p.id === productId);
         if (index !== -1) {
-            this.products.splice(index, 1);
+          this.products.splice(index, 1);
         }
-    }
-
-    likeProduct(productId: number): void {
+      }
+    
+      likeProduct(productId: number): void {
         const product = this.products.find(p => p.id === productId);
         if (product) {
-            product.likes++;
+          product.likes++;
         }
+      }
     }
-}
