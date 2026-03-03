@@ -1,0 +1,55 @@
+.photos-container {
+    padding: 20px;
+}
+h1{
+    color: rgb(3, 38, 126);
+}
+.back-btn {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #007bff;
+    color: #b4d6fb;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.back-btn:hover {
+    background: #0779f2;
+    color: white;
+}
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.photo-card {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.photo-title {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+    color: #a8b3bc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.loading, .empty {
+    text-align: center;
+    padding: 50px;
+    color: #e5e8eb;
+    font-size: 50px;
+}

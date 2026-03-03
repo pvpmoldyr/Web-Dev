@@ -1,0 +1,75 @@
+.detail-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.back-btn {
+    padding: 8px 16px;
+    background: none;
+    border: 1px solid #007bff;
+    color: #c2dcf9;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.back-btn:hover {
+    background: #007bff;
+    color: white;
+}
+.album-detail {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 30px;
+}
+.info p {
+    margin: 15px 0;
+}
+.edit-title {
+    margin: 20px 0;
+}
+.title-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.save-btn {
+    padding: 10px 20px;
+    background-color: #0c501c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.save-btn:hover:not(:disabled) {
+    background-color: #135120;
+}
+.save-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+.photos-link {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+.photos-link:hover {
+    background-color: #1668c0;
+}
+.loading {
+    text-align: center;
+    padding: 50px;
+    color: #d9e4f1;
+    font-size: 20px;
+}
