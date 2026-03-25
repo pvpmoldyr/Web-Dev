@@ -11,6 +11,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
+    
     price = models.FloatField()
     description = models.TextField()
     count = models.IntegerField()
