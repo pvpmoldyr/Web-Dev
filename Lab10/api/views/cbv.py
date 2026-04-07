@@ -4,6 +4,7 @@ from rest_framework import status
 from django.http import Http404
 from api.models import Product
 from api.serializers import ProductSerializer
+from rest_framework.request import Request
 
 class ProductListAPIView(APIView):
     def get(self, request):

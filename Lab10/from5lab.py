@@ -1,7 +1,7 @@
 import os
 import django
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shopp_back.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'shop_back.settings')
 django.setup()
 
 from api.models import Category, Product
